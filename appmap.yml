@@ -1,0 +1,7 @@
+appmap_dir: tmp/appmap
+language: python
+name: llmflows
+packages:
+  - path: llmflows
+  - path: tests
+  - path: examples
