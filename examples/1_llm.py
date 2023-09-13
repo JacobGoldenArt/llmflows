@@ -13,8 +13,12 @@ Note:
     This script requires the llmflows package to be installed, as well as an OpenAI 
     API key with access to the GPT-3 API.
 """
-import os
+
 from llmflows.llms import OpenAI
+import os
+import dotenv
+
+dotenv.load_dotenv()
 
 open_ai_key = os.environ.get("OPENAI_API_KEY", "<your-api-key>")
 
